@@ -64,6 +64,7 @@ The following list attempts to document the knowledge/skills a developer needs t
   * `[]`
   * `<<`
   * `=~`
+  * `to_i` / `to_f`
 * With `ActiveSupport`
   * `titleize`
   * `camelize` / `underscore`
@@ -88,6 +89,7 @@ The following list attempts to document the knowledge/skills a developer needs t
   * Core Math Operators (`+`, `-`, `*`, `/`)
   * Modulo `%`
   * `times`
+  * `to_s` / `to_f`
 * With `ActiveSupport`
   * Date/Time Extensions: `.hours`, `.days`, `.weeks`, `.months`, `.years`, `.ago`/`.until`, `.since`/`.from_now`
   * Byte Extensions: `.bytes`, `.kilobytes`, `.megabytes`, `.gigabytes`
@@ -110,8 +112,9 @@ The following list attempts to document the knowledge/skills a developer needs t
 
 * Core Ruby
   * Core Math Operators (`+`, `-`, `*`, `/`)
-  * `ceil`
-  * `floor`
+  * `ceil` 
+  * `to_i` / `floor`
+  * `to_s`  
 
 #### Regular Expressions
 
