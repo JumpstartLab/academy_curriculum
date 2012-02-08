@@ -28,6 +28,40 @@
   
 #### String
 
+* Concepts
+  * Creating / Definition
+  * Single vs. Double Quoted Strings
+  * Combining Strings and Other Data
+    * Concatenation with `+`
+    * Wrapping in an Array and using `join`
+    * Interpolating
+  * Implications of UTF8 encoding and Ruby 1.9
+  * Implications of "Normal" and "Bang" method variants
+  * Memory requirements/usage of string creation and manipulation
+* Essential Methods
+  * Core Ruby
+    * `chomp`
+    * `strip` / `lstrip` / `rstrip`
+    * `match`
+    * `capitalize` / `downcase` / `upcase`
+    * `each_char`
+    * `empty?`
+    * `start_with?` / `end_with?`
+    * `gsub`
+    * `delete`
+    * `replace`
+    * `reverse`
+    * `split`
+  * With `ActiveSupport`
+    * `titleize`
+    * `camelize` / `underscore`
+    * `classify`
+    * `constantize`
+    * `dasherize`
+    * `humanize`
+    * `parameterize`
+    * `pluralize` / `singularize`
+
 #### Fixnum
 
 #### Float
@@ -44,6 +78,8 @@
 * Alternatives
   * BigDecimal
   * Working without fractional components
+
+#### Regular Expressions
 
 ### Collections
 
