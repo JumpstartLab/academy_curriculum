@@ -43,7 +43,7 @@ The following list attempts to document the knowledge/skills a developer needs t
 * Differences between strings and symbols
 * Memory requirements/usage of string creation and manipulation
 
-###### Essential Methods
+##### Essential Methods
 
 * Core Ruby
   * `chomp`
