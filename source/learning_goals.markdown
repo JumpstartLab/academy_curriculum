@@ -1,3 +1,5 @@
+The following list attempts to document the knowledge/skills a developer needs to be "proficient" in Ruby. It is not intended to be exhaustive, and likely many points can be debated.
+
 ## Ruby
 
 ### Classes
@@ -59,6 +61,8 @@
   * `length` and `bytesize`
   * `include?`
   * `<=>`
+  * `[]`
+  * `<<`
 * With `ActiveSupport`
   * `titleize`
   * `camelize` / `underscore`
@@ -80,10 +84,13 @@
 ##### Essential Methods
 
 * Core Ruby
-  * Core Math Operators (`+-*/`)
+  * Core Math Operators (`+`, `-`, `*`, `/`)
   * Modulo `%`
   * `times`
 * With `ActiveSupport`
+  * Date/Time Extensions: `.hours`, `.days`, `.weeks`, `.months`, `.years`, `.ago`/`.until`, `.since`/`.from_now`
+  * Byte Extensions: `.bytes`, `.kilobytes`, `.megabytes`, `.gigabytes`
+  * `ordinalize`
 
 #### Float
 
@@ -95,18 +102,22 @@
 * Alternatives
   * `BigDecimal`
   * Avoiding fractional components
+* Using `Kernel.format`
 
 ##### Essential Methods
 
 * Core Ruby
-  * Math Operators
+  * Core Math Operators (`+`, `-`, `*`, `/`)
   * `ceil`
   * `floor`
-  * `format("%.3f", 22.0/7)`
+* With `ActiveSupport`
+  * `round_with_precision`
 
 #### Regular Expressions
 
 #### Range
+
+#### Date and Time
 
 ### Collections
 
