@@ -47,7 +47,7 @@ The following list attempts to document the knowledge/skills a developer needs t
 
 * Core Ruby
   * `chomp`
-  * `strip` / `lstrip` / `rstrip`
+  * `strip`
   * `match`
   * `capitalize` / `downcase` / `upcase`
   * `each_char` / `chars`
@@ -63,6 +63,7 @@ The following list attempts to document the knowledge/skills a developer needs t
   * `<=>`
   * `[]`
   * `<<`
+  * `=~`
 * With `ActiveSupport`
   * `titleize`
   * `camelize` / `underscore`
@@ -103,6 +104,7 @@ The following list attempts to document the knowledge/skills a developer needs t
   * `BigDecimal`
   * Avoiding fractional components
 * Using `Kernel.format`
+* Whole Number Math vs. Fractional Math (ex: `1.0/2` vs `1/2`)
 
 ##### Essential Methods
 
@@ -110,8 +112,6 @@ The following list attempts to document the knowledge/skills a developer needs t
   * Core Math Operators (`+`, `-`, `*`, `/`)
   * `ceil`
   * `floor`
-* With `ActiveSupport`
-  * `round_with_precision`
 
 #### Regular Expressions
 
@@ -124,6 +124,8 @@ The following list attempts to document the knowledge/skills a developer needs t
 #### Array
 
 #### Hash
+
+#### Enumerable
 
 #### Set
 
