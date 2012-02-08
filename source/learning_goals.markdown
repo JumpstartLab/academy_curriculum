@@ -38,6 +38,7 @@
   * Interpolating
 * Implications of UTF8 encoding and Ruby 1.9
 * Implications of "Normal" and "Bang" method variants
+* Differences between strings and symbols
 * Memory requirements/usage of string creation and manipulation
 
 ###### Essential Methods
@@ -47,7 +48,7 @@
   * `strip` / `lstrip` / `rstrip`
   * `match`
   * `capitalize` / `downcase` / `upcase`
-  * `each_char`
+  * `each_char` / `chars`
   * `empty?`
   * `start_with?` / `end_with?`
   * `gsub`
@@ -55,6 +56,9 @@
   * `replace`
   * `reverse`
   * `split`
+  * `length` and `bytesize`
+  * `include?`
+  * `<=>`
 * With `ActiveSupport`
   * `titleize`
   * `camelize` / `underscore`
@@ -67,22 +71,42 @@
 
 #### Fixnum
 
+##### Concepts
+
+* Numbers in Ruby are Objects
+  * We can call methods on numbers
+  * We can define methods on numbers
+
+##### Essential Methods
+
+* Core Ruby
+  * Core Math Operators (`+-*/`)
+  * Modulo `%`
+  * `times`
+* With `ActiveSupport`
+
 #### Float
 
-* Common Methods
-  * Math Operators
-  * `ceil`
-  * `floor`
-* Formatting
-  * `format("%.3f", 22.0/7)`
+##### Concepts
+
 * Challenges when using Floats
   * Math is not precise
   * Formatting can be more difficult
 * Alternatives
-  * BigDecimal
-  * Working without fractional components
+  * `BigDecimal`
+  * Avoiding fractional components
+
+##### Essential Methods
+
+* Core Ruby
+  * Math Operators
+  * `ceil`
+  * `floor`
+  * `format("%.3f", 22.0/7)`
 
 #### Regular Expressions
+
+#### Range
 
 ### Collections
 
