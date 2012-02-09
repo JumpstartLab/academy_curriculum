@@ -52,13 +52,12 @@ The following list attempts to document the knowledge/skills a developer needs t
   * `capitalize` / `downcase` / `upcase`
   * `each_char` / `chars`
   * `empty?`
-  * `start_with?` / `end_with?`
   * `gsub`
   * `delete`
   * `replace`
   * `reverse`
   * `split`
-  * `length` and `bytesize`
+  * `length`
   * `include?`
   * `<=>`
   * `[]`
@@ -67,10 +66,6 @@ The following list attempts to document the knowledge/skills a developer needs t
   * `to_i` / `to_f`
 * With `ActiveSupport`
   * `titleize`
-  * `camelize` / `underscore`
-  * `classify`
-  * `constantize`
-  * `dasherize`
   * `humanize`
   * `parameterize`
   * `pluralize` / `singularize`
@@ -82,6 +77,13 @@ The following list attempts to document the knowledge/skills a developer needs t
 * Numbers in Ruby are Objects
   * We can call methods on numbers
   * We can define methods on numbers
+* Tricks with Numbers
+  * Integer with Integer gives Integer
+  * Integer with Float gives Float
+  * Calling `to_i` on a String
+* Truth
+  * 0 is truthy
+* Order of Operations
 
 ##### Essential Methods
 
@@ -117,6 +119,56 @@ The following list attempts to document the knowledge/skills a developer needs t
   * `to_s`  
 
 #### Regular Expressions
+
+##### Concepts
+
+* Regular expressions are about matching patterns
+* Used for:
+  * validating formats
+  * extracting data
+
+##### Writing Expressions
+
+* Formatting
+  * Start and end with `/`
+  * Other formats exist, but are less commonly used
+* Matchers
+  * Plain Text
+  * Any of the letters a, b, c: `[abc]`
+  * Any of the letters except a, b, c: `[^abc]`
+  * Any single character in the range a-z: `[a-z]`
+  * Any single character in the range a-z or A-Z: `[a-zA-Z]`
+  * Any single character: `.` 
+  * Any whitespace character: `\s`
+  * Any non-whitespace character: `\S`
+  * Any digit: `\d`
+  * Any non-digit: `\D`
+  * Any word character (letter, number, underscore): `\w`
+  * Any non-word character: `\W`
+* Quantifiers
+  * Zero or one of a: `a?`
+  * Zero or more of a: `a*`
+  * One or more of a: `a+`
+  * Exactly 3 of a: `a{3}`
+  * 3 or more of a: `a{3,}`
+  * Between 3 and 6 of a: `a{3,6}`
+* Anchors
+  * Start of line: `^` 
+  * End of line: `$` 
+* Alternatives
+  * Either a or b: `(a|b)`
+* Captures
+  * Capture everything enclosed: `(...)`
+
+##### Essential Usages
+
+* Extracting Data
+  * Use the `.match` method
+  * Returns a `MatchData` object
+  * Query `MatchData` for captures
+* Validating Format
+  * Use the `=~` operator
+  * Often used in conditions
 
 #### Range
 
