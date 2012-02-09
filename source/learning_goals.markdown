@@ -172,6 +172,24 @@ The following list attempts to document the knowledge/skills a developer needs t
 
 #### Range
 
+##### Concepts
+
+* Specify a set of continuous values
+* Used most commonly with strings and integers
+  * Examples: `1..3`, `1...3`, `a..z`, `A..z`
+
+##### Essential Methods
+
+* `.to_a`
+* `.each`
+
+##### Essential Usages
+
+* With iterations
+* With `case` statements
+* Pulling substrings of strings
+* Pulling subsets of collections
+
 #### Date and Time
 
 ### Collections
