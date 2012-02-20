@@ -196,9 +196,203 @@ The following list attempts to document the knowledge/skills a developer needs t
 
 #### Array
 
+##### Concepts
+
+* Array literals
+* Create an array
+  * Given predefined size
+  * Predefined size and defaulting block
+* Enumeration and transformation
+* Index-based access
+* Reverse an Array
+* Remove `nil` entries
+* Creating strings with `join`
+* Using `push` and `pop` to simulate a Stack
+* Using `shift` and `unshift` to simulate a Queue
+* Sub-arrays using `slice`
+* Array math based on set operations
+* Concatenating arrays
+* Permutations and combinations
+
+##### Essential Methods
+
+  * Core Ruby
+    * `Array::[]`
+    * `Array::new`
+    * `&`
+    * `|`
+    * `*`
+    * `+`
+    * `-`
+    * `<<`
+    * `<=>`
+    * `==`
+    * `[]`
+    * `[]=`
+    * `clear`
+    * `collect`
+    * `collect!`
+    * `combination`
+    * `compact`
+    * `compact!`
+    * `concat`
+    * `count`
+    * `delete`
+    * `delete_at`
+    * `delete_if`
+    * `drop`
+    * `each`
+    * `empty?`
+    * `eql?`
+    * `first`
+    * `flatten`
+    * `flatten!`
+    * `include?`
+    * `insert`
+    * `join`
+    * `last`
+    * `length`
+    * `map`
+    * `map!`
+    * `permutation`
+    * `pop`
+    * `product`
+    * `push`
+    * `reject`
+    * `reject!`
+    * `reverse`
+    * `reverse!`
+    * `reverse_each`
+    * `sample`
+    * `select`
+    * `select!`
+    * `shift`
+    * `size`
+    * `slice`
+    * `slice!`
+    * `sort`
+    * `sort!`
+    * `sort_by!`
+    * `to_a`
+    * `transpose`
+    * `uniq`
+    * `uniq!`
+    * `unshift`
+    * `zip`
+  * With `ActiveSupport`
+    * `second`
+    * `third`
+    * `to_sentence`
+    * `to_formatted_s`/`to_s`
+    * `to_xml`
+    * `extract_options`
+    * `prepend`/`append`
+
 #### Hash
 
+##### Concepts
+
+* Hash literals
+* Access using keys
+  * Use `fetch` with a block
+* Setting the value for a key
+* Delete a key/value pair
+* Determine with a hash lacks a key, or the value for that key is `nil`
+* Create a hash from an even-numbered list of values
+* Create a hash from an Array of tuples
+* Create a hash with a default block for missing keys
+* HashWithIndifferentAccess in Rails
+* Get a list of all keys or all values
+
+##### Essential Methods
+
+    * `Hash::[]`
+    * `Hash::new`
+    * `==`
+    * `[]`
+    * `[]=`
+    * `clear`
+    * `delete`
+    * `delete_if`
+    * `each`
+    * `eql?`
+    * `fetch`
+    * `flatten`
+    * `has_key?`
+    * `include?`
+    * `key?`
+    * `keys`
+    * `length`
+    * `member?`
+    * `merge`
+    * `merge!`
+    * `size`
+    * `to_a`
+    * `values`
+  * With `ActiveSupport`
+    * `to_xml`
+    * `with_indifferent_access`
+    * `reverse_merge`
+    * `except`
+    * `assert_valid_keys`
+    * `stringify_keys`
+    * `symbolize_keys`
+    * `slice`
+    * `deep_dup`
+    * `diff`
+
 #### Enumerable
+
+##### Concepts
+
+* Enumeration methods and the Enumerator object
+* Sorting
+* Searching for one/all
+* One/all/any members matching a condition
+* Finding a subset of members
+* Transformation using map/collect
+* Min, max, and sum for a collection
+
+##### Essential Methods
+
+* Core Ruby
+  * `all?`
+  * `any?`
+  * `chunk`
+  * `collect`
+  * `count`
+  * `cycle`
+  * `detect`
+  * `drop`
+  * `each_cons`
+  * `each_slice`
+  * `each_with_index`
+  * `find`
+  * `find_all`
+  * `find_index`
+  * `first`
+  * `grep`
+  * `group_by`
+  * `include?`
+  * `inject`
+  * `map`
+  * `max`
+  * `member?`
+  * `min`
+  * `minmax`
+  * `none?`
+  * `one?`
+  * `partition`
+  * `reduce`
+  * `reject`
+  * `reverse_each`
+  * `select`
+  * `sort`
+  * `sort_by`
+  * `take`
+  * `take_while`
+  * `to_a`
+  * `zip`
 
 #### Set
 
